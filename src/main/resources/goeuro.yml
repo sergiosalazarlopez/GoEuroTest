@@ -1,0 +1,14 @@
+# goeuro.yml
+
+goeuro:
+    endpoint: http://api.goeuro.com/api/v2/position/suggest/en/{cityName}
+---
+spring:
+    profiles: test
+goeuro:
+    endpoint: http://api.goeuro.com/api/v2/position/suggest/en/{cityName}
+---
+spring:
+    profiles: development
+goeuro:
+    endpoint: http://api.goeuro.com/api/v2/position/suggest/en/{cityName}

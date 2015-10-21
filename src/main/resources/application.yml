@@ -1,0 +1,36 @@
+# application.yml
+
+application:
+    outputFileName: locations.csv
+    outputFilePath: /temp/
+    headers:
+          - _id
+          - name
+          - type
+          - latitude
+          - longitude
+    
+---
+spring:
+    profiles: test
+application:
+    outputFileName: locations.csv
+    outputFilePath: /temp/
+    headers:
+          - _id
+          - name
+          - type
+          - latitude
+          - longitude
+---
+spring:
+    profiles: development
+application:
+    outputFileName: locations.csv
+    outputFilePath: /temp/
+    headers:
+          - _id
+          - name
+          - type
+          - latitude
+          - longitude  

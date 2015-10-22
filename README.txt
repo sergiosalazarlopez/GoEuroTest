@@ -22,6 +22,8 @@ COMPILING AND RUNNING
 	> mvn clean install -DskipTests
 	> mvn java -jar target/GoEuroTest.jar cityName
 	
+	** The file could be created in the next directory: /temp/locations.csv. Must have a directory with that name (/temp)
+	
 THE TESTS
 
 	The project has two types of test: unit and integration
